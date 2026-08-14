@@ -1,0 +1,77 @@
+/* ... (mantenha o CSS anterior e adicione/altere o abaixo) ... */
+
+/* Estilo do Quiz */
+#quiz-container {
+    background-color: var(--black);
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid var(--deep-pink);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333;
+    color: white;
+    border: 1px solid var(--primary-pink);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option-btn:hover {
+    background-color: var(--deep-pink);
+}
+
+/* Estilo da Carta */
+.letter-section {
+    background-color: #fff0f5; /* Fundo bem clarinho (Lavender Blush) */
+    color: var(--black); /* Texto preto para contraste na carta */
+    padding: 3rem 2rem;
+}
+
+.letter-content {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.letter-content::before {
+    content: "💌";
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    font-size: 3rem;
+}
+/* Estilo dos Corações */
+.heart {
+    position: fixed;
+    bottom: -10vh;
+    color: var(--deep-pink);
+    animation: floatUp 5s linear forwards;
+    z-index: 9999; /* Garante que fique por cima de tudo */
+    pointer-events: none; /* Para não atrapalhar os cliques */
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
