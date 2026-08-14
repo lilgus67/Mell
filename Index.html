@@ -3,16 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Para [Mell]</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Para Mel ❤️</title>
+    <!-- Atenção: Como seu arquivo se chama estilo.css, deixei o link assim -->
+    <link rel="stylesheet" href="estilo.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Player de Música Discreto -->
+    <div class="music-player">
+        <button id="play-btn" onclick="toggleMusic()">🎵 Tocar Nossa Música</button>
+        <audio id="bg-music" loop>
+            <!-- Caminho atualizado para a pasta img e nome curto -->
+            <source src="img/musica.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
     <!-- 1. Boas-vindas -->
     <header class="hero">
         <div class="content">
-            <h1>Para [Mel] ❤️</h1>
+            <h1>Para Mel ❤️</h1>
             <p class="subtitle">Um cantinho digital só para nós.</p>
             <button onclick="scrollToSection('album')">Ver Nossas Fotos</button>
         </div>
@@ -22,11 +32,12 @@
     <section id="album" class="container">
         <h2>Nossos Momentos</h2>
         <div class="photo-grid">
-            <!-- Adicione suas fotos na pasta 'img' e atualize os nomes aqui -->
-            <div class="photo-card"><img src="img/foto1.jpg" alt="Foto 1"></div>
-            <div class="photo-card"><img src="img/foto2.jpg" alt="Foto 2"></div>
-            <div class="photo-card"><img src="img/foto3.jpg" alt="Foto 3"></div>
-            <div class="photo-card"><img src="img/foto4.jpg" alt="Foto 4"></div>
+            <!-- Caminhos atualizados para img/fotoX.jpg -->
+            <div class="photo-card"><img src="img/foto1.jpg" alt="Nós dois"></div>
+            <div class="photo-card"><img src="img/foto2.jpg" alt="Um dia especial"></div>
+            <div class="photo-card"><img src="img/foto3.jpg" alt="Sorriso dela"></div>
+            <div class="photo-card"><img src="img/foto4.jpg" alt="Momento feliz"></div>
+            <div class="photo-card"><img src="img/foto5.jpg" alt="Juntos"></div>
         </div>
     </section>
 
@@ -39,7 +50,7 @@
                 <div id="options-box"></div>
             </div>
             <div id="result-box" style="display: none;">
-                <h3>Resultado: <span id="score">0</span>/3</h3>
+                <h3>Resultado: <span id="score">0</span>/10</h3>
                 <p id="feedback-msg"></p>
                 <button onclick="restartQuiz()">Tentar de novo</button>
             </div>
@@ -53,125 +64,77 @@
             <p>Meu amor,</p>
             <p>Escrever essas linhas é a forma mais simples que encontrei de dizer o quanto você é especial para mim. Cada dia ao seu lado é uma nova aventura...</p>
             <p>[A cidade descansa.
-
 Minha mente continua inquieta.
-
 Por medo?
-
 Por raiva?
-
 Não.
-
 Por amor.
-
 Que amor?
-
 O amor pela Mel.
-
 E por que a Mel?
-
 Porque ela me faz sentir bem.
-
 E por que ela faz você se sentir bem?
-
 Porque todos os meus pensamentos,
 sem exceção,
 levam até ela.
-
 Às vezes sinto saudade.
-
 Saudade de quê?
-
 Na verdade...
 nem sei se saudade é a palavra certa.
-
 Então o que é?
-
 É um sentimento maior
 do que consigo entender.
 Maior do que consigo explicar.
-
 Então tente.
-
 Tudo bem.
-
 Qual é esse sentimento?
-
 É a sensação
 de ter perdido tempo.
-
 Como assim?
-
 Não porque vivi errado.
-
 Nem porque faria tudo diferente.
-
 Mas porque demorei
 para encontrar alguém como ela.
-
 Eu vivia triste.
-
 Não porque fosse infeliz.
-
 Mas porque ainda não conhecia
 a pessoa que, sem perceber,
 já fazia falta.
-
 Então foi destino?
-
 Foi o plano de Deus.
-
 Ele alinhou os nossos caminhos
 no tempo certo.
-
 E eu espero,
 com todo o meu coração,
 que os nossos sonhos
 também se realizem.
-
 Você tem algum arrependimento?
-
 Só um.
-
 Não ter encontrado você antes.
-
 Assim,
 eu poderia ter amado você
 por muito mais tempo.
-
 Você ama?
-
 Amo.
-
 Ama o quê?
-
 Não é "o quê".
-
 É "quem".
-
 Quem?
-
 A minha mulher.
-
 Quem é ela?
-
 A Mel.
-
 E quem é a Mel?
-
 A mulher mais linda
 que meus olhos já conheceram.
-
 E, acima de tudo,
-
-o amor da minha vida.</p>
+o amor da minha vida. ]</p>
             <br>
             <p>Com todo meu amor,<br><strong>[Gustavo Rodrigues]</strong></p>
         </div>
     </section>
 
     <footer>
-        <p>Feito com ❤️ e código por [Gustavo Rodrigues]</p>
+        <p>Feito com ❤️ e código por [Gustavo de Souza Rodrigues]</p>
     </footer>
 
     <script src="script.js"></script>
